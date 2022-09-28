@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy to S3
 
 # Controls when the workflow will run
 on:
@@ -26,7 +26,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Configure AWS credentials from Test account
+    - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -39,12 +39,7 @@ jobs:
       run: |
         aws s3 sync . s3://aaronthomaswebster.com
 
-    - name: Configure AWS credentials from Production account
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        role-to-assume: arn:aws:iam::222222222222:role/my-github-actions-role-prod
-        aws-region: us-west-2
 
-    - name: Copy files to the production website with the AWS CLI
+    - name: Create CloudFront Distribution Invalidation
       run: |
-        aws s3 sync . s3://my-s3-prod-website-bucket
+        aws cloudfront create-invalidation --distribution-id E2Q59N9AF9NOK9 --paths "/*"

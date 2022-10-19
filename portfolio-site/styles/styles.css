@@ -105,6 +105,27 @@ section{
   padding: 1em;
 }
 
+section div a {
+  background-color: var(--primary-color);
+  box-shadow: 0 5px 0 var(--secondary-color);
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+section div a:hover {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+section div a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
 .fliped-section{
   display: grid;
   grid-template-columns: 1fr 2fr;

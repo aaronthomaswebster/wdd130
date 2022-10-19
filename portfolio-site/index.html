@@ -2,10 +2,13 @@
 <html  lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="styles/side-nav.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Portfolio | Aaron Webster</title>
     <link rel="icon" href="images/favicon.ico" sizes="any" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <script src="scripts/side-nav.js"></script>
   </head>
   <body>
     <header>
@@ -13,12 +16,19 @@
         <img class="logo" src="images/Awebster.svg" alt="Logo" />
       </a>
       <nav>
-        <a href="#" class="current-page">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
+        <a class="desktop current-page" href="#" >Home</a>
+        <a class="desktop" href="projects.html">Projects</a>
+        <a class="desktop" href="skills.html">Skills</a>
+        <a class="mobile" onclick="openNav()"><img src="images/menu.png"></a>
       </nav>
     </header>
-    <main>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="current-page">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </div>
+    <main id="main">
       <section id="this-is-me">
         <div>
           <h4>This is me</h4>

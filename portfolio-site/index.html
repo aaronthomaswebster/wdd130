@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
   <!-- https://www.w3schools.com/howto/howto_js_off-canvas.asp -->
   <head>
     <meta charset="utf-8" />
@@ -17,41 +17,45 @@
         <img class="logo" src="images/Awebster.svg" alt="Logo" />
       </a>
       <nav>
-        <a class="desktop current-page" href="#" >Home</a>
+        <a class="desktop current-page" href="#">Home</a>
         <a class="desktop" href="projects.html">Projects</a>
         <a class="desktop" href="skills.html">Skills</a>
-        <a class="mobile" onclick="openNav()"><img src="images/menu.png" alt="menu button"></a>
+        <a class="mobile" onclick="openNav()"
+          ><img src="images/menu.png" alt="menu button"
+        /></a>
       </nav>
     </header>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
       <a href="#" class="current-page">Home</a>
       <a href="projects.html">Projects</a>
       <a href="skills.html">Skills</a>
     </div>
     <main id="main">
       <section id="this-is-me">
-        <div>
+        <div class="section-content">
           <h4>This is me</h4>
-          <h1>Aaron Websrter</h1>
+          <h1>Aaron Webster</h1>
           <p>We will build something great together</p>
           <a href="projects.html">See my Work</a>
         </div>
-        <div>
+        <div class="section-image mobile-hidden">
           <img src="images/main.jpg" alt="linked-in icon" />
         </div>
       </section>
       <section id="about-me" class="fliped-section">
-        <div>
+        <div class="section-image">
           <img
             class="grid-image"
             src="images/secondary.jpg"
             alt="linked-in icon"
           />
         </div>
-        <div>
+        <div class="section-content">
           <h4>About me</h4>
-          <h1>Aaron Websrter</h1>
+          <h1>Aaron Webster</h1>
           <p class="text-align-left">
             I am a proficient Salesforce and Full-Stack
             Developer.Results-oriented professional with 7+ years of experience
@@ -71,6 +75,9 @@
       <div class="social">
         <a href="https://www.linkedin.com/in/aaron-t-webster/" target="_blank">
           <img src="images/linked-in.svg" alt="linked-in icon" />
+        </a>
+        <a href="https://trailblazer.me/id/aaron-webster" target="_blank">
+          <img class="salesforce" src="images/trail.png" alt="Salesforce Trailhead icon" />
         </a>
       </div>
     </footer>

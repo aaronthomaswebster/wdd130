@@ -16,39 +16,43 @@
         <img class="logo" src="images/Awebster.svg" alt="Logo" />
       </a>
       <nav>
-        <a class="desktop" href="index.html" >Home</a>
+        <a class="desktop" href="index.html">Home</a>
         <a class="desktop" href="projects.html">Projects</a>
         <a class="desktop current-page" href="#">Skills</a>
-        <a class="mobile" onclick="openNav()"><img src="images/menu.png" alt="menu button"></a>
+        <a class="mobile" onclick="openNav()"
+          ><img src="images/menu.png" alt="menu button"
+        /></a>
       </nav>
     </header>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="#" class="current-page">Skills</a>
     </div>
     <main id="main">
       <section id="my-work">
-        <div>
+        <div class="section-content">
           <h4>What can I do</h4>
           <h1>Skills</h1>
           <p>With my talent and your vision, we will build something great!</p>
           <a>Contact Me</a>
         </div>
-        <div>
+        <div class="section-image mobile-hidden">
           <img src="images/secondary.jpg" alt="linked-in icon" />
         </div>
       </section>
       <section id="salesforce" class="fliped-section">
-        <div>
+        <div class="section-image">
           <img
             class="grid-image"
             src="images/SalesforceLogo.svg"
             alt="linked-in icon"
           />
         </div>
-        <div>
+        <div class="section-content">
           <h3>Salesforce</h3>
           <p class="text-align-left">
             I am a skilled and experienced Salesforce Developer, with skills in
@@ -59,7 +63,7 @@
         </div>
       </section>
       <section id="web-developmen">
-        <div>
+        <div class="section-content">
           <h3>Web Development</h3>
           <p>
             When it comes to web development my skill set is strong. With 5+
@@ -67,19 +71,19 @@
             that will be fast and responsive.
           </p>
         </div>
-        <div>
+        <div class="section-image">
           <img src="images/vue.jpg" alt="linked-in icon" />
         </div>
       </section>
       <section id="databases" class="fliped-section">
-        <div>
+        <div class="section-image">
           <img
             class="grid-image"
             src="images/databases.jpg"
             alt="linked-in icon"
           />
         </div>
-        <div>
+        <div class="section-content">
           <h3>Databases</h3>
           <p class="text-align-left">
             I have 4+ years of experience maintaing Microsfot SQL Databases, 2+
@@ -89,7 +93,7 @@
         </div>
       </section>
       <section id="Adminitstration">
-        <div>
+        <div class="section-content">
           <h3>Adminitstration</h3>
           <p>
             I have 6+ years as a IT administrator, with experience
@@ -97,7 +101,7 @@
             (telephony), 3CX, Twillio, Gsuite, Hubspot, and many more.
           </p>
         </div>
-        <div>
+        <div class="section-image">
           <img src="images/deployment.jpg" alt="linked-in icon" />
         </div>
       </section>
@@ -111,6 +115,9 @@
       <div class="social">
         <a href="https://www.linkedin.com/in/aaron-t-webster/" target="_blank">
           <img src="images/linked-in.svg" alt="linked-in icon" />
+        </a>
+        <a href="https://trailblazer.me/id/aaron-webster" target="_blank">
+          <img class="salesforce" src="images/trail.png" alt="Salesforce Trailhead icon" />
         </a>
       </div>
     </footer>

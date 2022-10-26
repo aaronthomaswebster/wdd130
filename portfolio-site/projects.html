@@ -16,39 +16,43 @@
         <img class="logo" src="images/Awebster.svg" alt="Logo" />
       </a>
       <nav>
-        <a class="desktop" href="index.html" >Home</a>
+        <a class="desktop" href="index.html">Home</a>
         <a class="desktop current-page" href="#">Projects</a>
         <a class="desktop" href="skills.html">Skills</a>
-        <a class="mobile" onclick="openNav()"><img src="images/menu.png" alt="menu button"></a>
+        <a class="mobile" onclick="openNav()"
+          ><img src="images/menu.png" alt="menu button"
+        /></a>
       </nav>
     </header>
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
       <a href="index.html">Home</a>
       <a href="#" class="current-page">Projects</a>
       <a href="skills.html">Skills</a>
     </div>
     <main id="main">
       <section id="my-work">
-        <div>
+        <div class="section-content">
           <h4>My Work</h4>
           <h1>Projects</h1>
           <p>We will build something great together</p>
           <a>Contact Me</a>
         </div>
-        <div>
+        <div class="section-image mobile-hidden">
           <img src="images/secondary.jpg" alt="linked-in icon" />
         </div>
       </section>
       <section class="fliped-section">
-        <div>
+        <div class="section-image">
           <img
             class="grid-image"
             src="images/dry-oar-logo.png"
             alt="linked-in icon"
           />
         </div>
-        <div>
+        <div class="section-content">
           <h3>Dry Oar</h3>
           <p class="text-align-left">
             A project written in vanial HTML and CSS. This project showcases
@@ -57,7 +61,7 @@
         </div>
       </section>
       <section id="solcius">
-        <div>
+        <div class="section-content">
           <h3>Solcius.com</h3>
           <p>
             Built in HTML, CSS, JS, Vue JS. Solcius.com is a shinning example of
@@ -67,19 +71,19 @@
             library.
           </p>
         </div>
-        <div>
+        <div class="section-image">
           <img src="images/solcius.png" alt="linked-in icon" />
         </div>
       </section>
       <section class="fliped-section">
-        <div>
+        <div class="section-image">
           <img
             class="grid-image"
             src="images/planitdating.svg"
             alt="linked-in icon"
           />
         </div>
-        <div>
+        <div class="section-content">
           <h3>Plan-it Dating</h3>
           <p class="text-align-left">
             Plan-it Dating, is a site that is still under construction. With a
@@ -101,6 +105,9 @@
       <div class="social">
         <a href="https://www.linkedin.com/in/aaron-t-webster/" target="_blank">
           <img src="images/linked-in.svg" alt="linked-in icon" />
+        </a>
+        <a href="https://trailblazer.me/id/aaron-webster" target="_blank">
+          <img class="salesforce" src="images/trail.png" alt="Salesforce Trailhead icon" />
         </a>
       </div>
     </footer>

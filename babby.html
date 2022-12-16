@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Babby Names</title>
+    <script>
+        // Initialize the list of baby names
+        let babyNames = [];
+
+        // Prompt the user to enter the initial list of baby names
+        let numNames = prompt("Enter the number of baby names you want to compare: ");
+
+        // Validate the input to make sure it's a positive integer
+        while (isNaN(numNames) || numNames <= 0) {
+            numNames = prompt("Invalid input. Enter a positive integer for the number of baby names: ");
+        }
+
+        // Prompt the user to enter the baby names
+        for (let i = 0; i < numNames; i++) {
+            let name = prompt("Enter baby name #" + (i + 1) + ": ");
+            babyNames.push(name);
+        }
+
+        // Keep prompting the user to compare 3 baby names until there's only one left
+        while (babyNames.length > 1) {
+
+            nameList = []
+
+            while (nameList.length < 3 && nameList.length <babyNames.length) {
+                let name = babyNames[Math.floor(Math.random() * babyNames.length)];
+                if (!nameList.includes(name)) {
+                    nameList.push(name);
+                }
+            }
+
+            // Prompt the user to select the name they like the least
+            let leastFavorite = prompt("Which of these names do you like the least?\n" + nameList.join("\n"));
+
+            // Validate the input to make sure it's one of the 3 names
+            while (nameList.indexOf(leastFavorite) == -1) {
+                leastFavorite = prompt("Invalid input. Please select one of the following names:\n" + nameList.join("\n"));
+            }
+
+            // Remove the least favorite name from the list
+            babyNames.splice(babyNames.indexOf(leastFavorite), 1);
+        }
+
+        // Display the remaining baby name
+        alert("The remaining baby name is: " + babyNames[0]);
+    </script>
+</head>
+
+<body>
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
+</body>
+
+</html>
